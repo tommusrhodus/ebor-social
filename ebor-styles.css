@@ -1,0 +1,27 @@
+ul.ebor-social {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none !important;
+}
+ul.ebor-social li {
+	display: inline-block !important;
+}
+p.ebor-description {
+	margin-bottom: 20px;
+}
+a.ebor-social, a.ebor-social-16px, a.ebor-social-32px {
+	 display: inline-block;
+	 margin: 3px 6px 3px 0;
+}
+a.ebor-social-16px i, a.ebor-social-32px i {
+	position: static; left: 0;
+}
+a.ebor-social-16px {
+	font-size: 16px !important;
+}
+a.ebor-social-32px {
+	font-size: 32px !important;
+}
+.ebor_social li, .ebor_social ul {
+	padding: 0; margin: 0; border: none; display: inline-block;
+}
