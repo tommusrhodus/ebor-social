@@ -10,7 +10,7 @@ function ebor_social_render_form() {
 		<h2><?php _e('Ebor Social Settings','ebor'); ?></h2>
 		<?php echo '<p>' . __('Welcome to <b>Ebor Social</b>, a fantastic little plugin for displaying Retina Enabled Social Icons in your theme.','ebor') . '</p>'; ?>
 		<br />
-		<p>This plugin creates a widget which you can use in your sidebars, <a href="widgets.php">add it now.<br /></p>
+		<p>This plugin creates a widget which you can use in your sidebars, <a href="widgets.php">add it now.</a><br /></p>
 		<br />
 		<p>This plugin also creates a shortcode, which you can use like this;</p>
 		<code>[ebor_social size="32px"]</code>
