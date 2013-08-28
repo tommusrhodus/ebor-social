@@ -38,7 +38,6 @@ function ebor_social_style() {
 add_action('wp_enqueue_scripts', 'ebor_social_style');
 
 // Set-up Action and Filter Hooks
-register_activation_hook(__FILE__, 'ebor_social_update_plugin_options');
 register_uninstall_hook(__FILE__, 'ebor_social_delete_plugin_options');
 add_action('admin_init', 'ebor_social_init' );
 add_action('admin_menu', 'ebor_social_add_options_page');
@@ -47,11 +46,6 @@ add_action('admin_menu', 'ebor_social_add_options_page');
 function ebor_social_delete_plugin_options() {
 	delete_option('ebor_social_options');
 	delete_option('ebor_social_display_options');
-}
-
-function ebor_social_update_plugin_options(){
-	add_option( 'ebor_social_display_options' );
-	add_option( 'ebor_social_options' );
 }
 
 // Init plugin options to white list our options
