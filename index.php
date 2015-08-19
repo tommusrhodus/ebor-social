@@ -133,13 +133,12 @@ function ebor_social_load_widgets()
 
 class ebor_social_Widget extends WP_Widget {
 	
-	function ebor_social_Widget()
-	{
-		$widget_ops = array('classname' => 'ebor_social', 'description' => 'Place retina-ready social icons into your sidebars.');
-
-		$control_ops = array('id_base' => 'ebor_social-widget');
-
-		$this->WP_Widget('ebor_social-widget', 'Ebor Social', $widget_ops, $control_ops);
+	function ebor_social_Widget(){
+		parent::__construct(
+			'ebor_social-widget', // Base ID
+			__('Ebor Social', 'ebor_framework'), // Name
+			array( 'description' => __( 'Add a simple social icons widget', 'ebor_framework' ), ) // Args
+		);
 	}
 	
 	function widget($args, $instance)
